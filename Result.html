@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Result</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+<style>
+
+
+
+*{
+padding: 0;
+margin:0;
+box-sizing: border-box;
+font-family: serif;
+}
+body{
+background-color:#edf4ff ;
+}
+.Page-Container{
+
+//background-color: #edf4ff;
+
+//padding-left: 25px;
+//position: relative;
+}
+
+.school-container{
+position: relative;
+
+    //left: 210px;
+   
+   // border: 2px solid blue;
+}
+h1{
+text-align: center;
+}
+.profile-container{
+display: grid;
+background-color: #2f02b7;
+opacity: 1;
+//width: 50%;
+position: sticky;
+lift: 80px;
+box-shadow: 0px 1px 0px 1px;
+text-align:center;
+
+}
+.profile-img{
+    width: 120px;
+    position: relative;
+    border-radius: 50%;
+    //left: 50%;
+    margin:10px;
+    border: 2px solid Green;
+}
+h3{
+border: 1px solid blue;
+    display: inherit;
+    position: relative;
+    //left: 50%;
+
+}
+p{
+position: relative;
+    color: #edf4ff;
+    //background-color: cornflowerblue;
+    box-shadow: 0px 0px 1px 0px
+//margin: 10px;
+//border: 1px solid blue;
+}
+.profile-details{
+//background-color: cornflowerblue;
+position:absolute;
+//left:20px;
+}
+.profile-details .profile-name{
+  width: fit-content;
+    left: 144px;
+    bottom: -36px;
+}
+.profile-details .profile-class{
+    left: 310px;
+    bottom: -12px;
+width: fit-content;
+}
+.profile-details .profile-Email{
+     left: 214px;
+    bottom: -26px;
+    width: fit-content;
+width: fit-content;
+}
+.profile-details .profile-Contact{
+     left: 410px;
+    top: -36px;
+    width: fit-content;
+
+}
+ .profile-Address{
+ left: 144px;
+    bottom: -17px;
+width: fit-content;
+}
+
+
+.trans-page{
+width:142px;
+position:fixed ;
+right: 0px;
+top:52px;
+z-index:-1;
+display:flex;
+//height:56px;
+//opacity: 0.8;
+font-size: 19px;
+font-weight: bold;
+border-right: 41px solid #2f02b7;
+border-radius:8px 8px 8px 8px;
+background-color: #ffeb3b;
+transition: width 2s;
+
+}
+.trans-page:hover{
+width:400px;
+opacity:none;
+}
+.profile-Exam{
+position:absolute ;
+left: 7px;
+top:146px;
+color:#02b73a;
+//border: 1px solid yellow;
+border-radius:8px 0px 8px 0px;
+background-color: #ffeb3b;
+
+}
+.profile-online{
+    content: " ";
+    width: 14px;
+    display: inline;
+    border-radius: 50%;
+    position: relative;
+    height: 14px;
+    background-color: #8bff6e;
+    left: 110px;
+    bottom: 37px;
+    z-index: auto;
+}
+.profile-online2{
+ content: " ";
+    width: 16px;
+    display: inline;
+    border-radius: 50%;
+    position: relative;
+    height: 16px;
+    background-color: black;
+    left: 110px;
+    bottom: 37px;
+    z-index: auto;
+
+}
+.check-result-hero{
+position: relative;
+top: 9px;
+    font-size: x-large;
+//border:2px solid black;
+//background-color: blue;
+}
+.check-result-hero h4{
+text-align: center;
+
+}
+.Result-Table{
+display: grid;
+grid-template-colums:auto auto;
+    padding: 26px;
+    background-color: #fffef5;
+    position: relative;
+    position: relative;
+    margin-left: 25px;
+    margin-right: 25px;
+    box-shadow: 1px 1px 1px 1px;
+border-radius:2px;
+
+}
+.Result-Table table{
+background-color: rgba(255, 255, 255, 0.8);
+
+
+}
+.Result-Table table tr {
+border-radius:2px;
+}
+.Result-Table table tr td{
+border-top: 1.5px solid #e7dbdb;
+text-align:center;
+padding:1px;
+}
+.Academic-logo{
+position:absolute;
+top:216px;
+right:10px;
+}
+.Academic-logo img{
+    position: relative;
+    top: -21px;
+    width: 261px;
+    height: 261px;
+mix-blend-mode: multiply;
+}
+.below-table{
+top: 15px;
+position: relative;
+text-align: center;
+text-style:italy;
+}
+
+/********Footer Section*********/
+.container{
+max-width:1170px;
+background-color: ;
+margin:auto;
+}
+
+.row{
+display:flex;
+flex-wrap:wrap;
+
+}
+
+ul{
+list-style:none;
+}
+
+.footer{
+position: relative;
+top:30px;
+background-color: #0c0c6c;
+padding: 20px 0px;
+
+}
+
+.footer-col{
+width:25%;
+padding: 0 15px;
+
+}
+
+.footer-col h4{
+font-size:18px;
+color: #ffffff;
+text-transform: capitalize;
+margin-bottom:30px;
+font-weight: 500px;
+position: relative;
+}
+.footer-col h4::before{
+content:"";
+position:absolute;
+left: 0;
+bottom:-10px;
+box-sizing:border-box;
+background-color: red;
+height:2px;
+width:50px;
+}
+.footer-col ul li:not(:last-child){
+margin-bottom:10px;
+}
+.footer-col ul li a{
+font-size:16px;
+text-transform:capitalize;
+text-decoration: none;
+font-weight:300px;
+color: #bbbbbb;
+display:block;
+transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+color: #ffffff;
+padding-left:10px;
+}
+.footer-col .social-links a{
+display: inline-block;
+height: 40px;
+width: 40px;
+background-color: rgba(225,225,225,0.2);
+margin: 0 10px 10px 0;
+text-align: center;
+line-height:40px;
+border-radius:50%;
+color: #ffffff;
+transition: all 0.5s ease;
+
+}
+.footer-col .social-links a:hover{
+color: #24262b;
+background-color: #ffffff;
+}
+/********Select Section*********/
+
+.section-dropdown{
+border: 2px solid re;
+padding-left:20px;
+}
+.section-container{
+border: 2px solid bue;
+}
+.section-box{
+display:n;
+border: 2px solid gren;
+}
+.section-box h5{
+padding: 10px;
+background-color:;
+border:1px solid yw;
+font-size: 20px;
+max-width: 18;
+display:block;
+color:#0c0c6c;;
+}
+input{
+margin-left:27px;
+}
+
+.section-box label{
+background-color: #fff; 
+padding: 15px;
+position:relative;
+margin:px;
+border-left: 2px solid #0c0c6c;
+color: #0c0c6c;
+border-radius:5px;
+max-width:165px;
+display:inline-block;
+box-shadow: 1px 1px 1px 0px;
+transition: all 0.2s ease;
+}
+.section-box label:hover{
+background-color: #0c0c6c;
+color:#ffffff; 
+padding-right: 5px;
+border-left: 2px solid #ffffff;
+}
+
+/*responsive*/
+@media(max-width:767px){
+.footer-col{
+width:50%;
+margin-bottom:30px;
+padding-left: 40px;
+}
+}
+@media(max-width:574px){
+.footer-col{
+width:100%;
+}
+}
+</style>
+</head>
+<body>
+<div class="Page-Container">
+
+<div class="school-container">
+<h1>School Portal</h1> 
+</div>
+
+<div class="profile-container">
+<img src="C:\Users\iMadious\Documents\CityTop\Imade_tech\profile3.jpg" class="profile-img">
+<div class="profile-online"></div>
+<div class="profile-online2"></div>
+
+<div class="profile-details">
+<p style="font-weight:bold" class="profile-name">Tommy Bob Mike</p>
+<p class="profile-class">Class: Jss2</p>
+<p class="profile-Email">Email: tommybobj@gnail.com</p>
+<p class="profile-Contact">Contact: 08178320978 </p>
+<p class="profile-Address">Home Address: 17,tommy str, Lekki, Lagos State</p>
+<p class="trans-page" style="color:#2f02b7">Academic Result Is Availabel </p>
+<p class="profile-Exam" style="color:#2f02b7">Exam No: 5723895608534</p>
+</div>
+</div>
+
+
+<div class="check-result-hero">
+<h4> Select Academic Result</h4>
+</div>
+ <div class="Academic-logo">
+<img src="C:\Users\iMadious\Documents\CityTop\Imade_tech\academic-logo.jpg">
+</div>
+
+
+<div class="section-dropdown">
+<div class="section-container">
+
+<div class="section-box">
+<h5 >Select Section</h5>
+
+<input type="radio" name="gender" >
+<label for="selection">First Team</label>
+
+<input type="radio" name="gender">
+<label for="selection">Second Team</label>
+
+<input type="radio" name="gender">
+<label for="selection">Third Team</label>
+</div>
+
+<div class="section-box">
+<h5>Select Academy Year</h5>
+
+<input type="radio" name="Academic-year" >
+<label for="year ">2020/2021</label>
+
+<input type="radio" name="Academic-year" >
+<label for="year ">2021/2022</label>
+
+<input type="radio" name="Academic-year" >
+<label for="year ">2022/2023</label>
+
+<input type="radio" name="Academic-year" >
+<label for="year ">2023/2024</label>
+
+</div>
+
+</div>
+</div>
+
+<div class="t" style="text-align:center; font-weight:bold; font-size: x-large;" >Academic Result For First Team</div>
+<div class="Result-Table">
+<table>
+<tr>
+  <th>Subject</th>
+  <th>Score</th>
+  <th>Grade</th>
+</tr>
+<tr>
+  <td>English</td>
+  <td>80</td>
+  <td>B</td>
+</tr>
+<tr>
+  <td>Maths</td>
+  <td>60</td>
+  <td>B</td>
+</tr>
+<tr>
+  <td>Computer</td>
+  <td>70</td>
+  <td>B</td>
+</tr>
+<tr>
+  <td>Social Study</td>
+  <td>50</td>
+  <td>C</td>
+</tr>
+<tr>
+  <td>Coding</td>
+  <td>80</td>
+  <td>B</td>
+</tr>
+<tr>
+  <td>Yoruba</td>
+  <td>60</td>
+  <td>B</td>
+</tr>
+<tr>
+  <td>CRK</td>
+  <td>70</td>
+  <td>B</td>
+</tr>
+<tr>
+  <td>Social Study</td>
+  <td>50</td>
+  <td>C</td>
+<tr>
+  <td>English</td>
+  <td>80</td>
+  <td>B</td>
+</tr>
+<tr>
+  <td>Maths</td>
+  <td>60</td>
+  <td>B</td>
+</tr>
+<tr>
+  <td>ICT</td>
+  <td>70</td>
+  <td>B</td>
+</tr>
+<tr>
+  <td>Social Study</td>
+  <td>50</td>
+  <td>C</td>
+</tr>
+</tr>
+</table>
+</div>
+
+<section class="below-table">To understand the example better, we have added borders to the table.</section>
+</div>
+
+<footer class="footer" >
+ <div class="container">
+  <div class="row">
+    <div class="footer-col">
+     <h4>Programs </h4>
+<ul>
+   <li><a href="#">Corporate</a></li>
+   <li ><a href="#">One to One</a></li>
+   <li ><a href="#">Consulting</a></li>
+</ul>
+ </div>
+
+<div class="footer-col">
+ <h4>Service </h4>
+  <ul>
+   <li><a href="#">Education</a></li>
+   <li ><a href="#">Coaching</a></li>
+   <li ><a href="#">Consulting</a></li>
+  </ul>
+</div>
+
+<div class="footer-col">
+ <h4>Contact</h4>
+  <ul>
+   <li><a href="#">Home</a></li>
+   <li ><a href="#">About</a></li>
+   <li ><a href="#">Contact</a></li>
+  </ul>
+</div>
+<div class="footer-col">
+  <h4>Follow us</h4>
+<div class="social-links">
+<a href="#"><i class="fab fa-facebook-f"></i></a>
+<a href="#"><i class="fab fa-twitter"></i></a>
+<a href="#"><i class="fab fa-instagram"></i></a>
+<a href="#"><i class="fab fa-linkedin-in"></i></a>
+</div>
+</div>
+
+ </div>
+  </div>
+</footer>
+
+
+
+
+
+</body>
+</html
